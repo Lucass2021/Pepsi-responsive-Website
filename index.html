@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <title>Pepsi Website</title>
+</head>
+
+<body>
+
+    <section class="sec">
+        <header>
+            <a href="#"><img src="./assets/logo.png" alt="Pepsi Logo" class="logo"></a>
+            <div class="toggleMenu" onclick="menuToggle()"> </div>
+            <ul class="navigation">
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Products</a></li>
+                <li> <a href="#">What's new</a></li>
+                <li> <a href="#">Newsletter</a></li>
+                <li> <a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What <br> <span> I Like </span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nihil voluptatum itaque rerum
+                    similique nemo amet, autem necessitatibus voluptas possimus, voluptatem, iste esse accusantium
+                    temporibus eveniet perspiciatis ipsam quae officiis.</p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="./assets/pepsi001.png" alt="Pepsi Soda" class="pepsi">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="./assets/pepsi001.png" onclick="imgSlider('./assets/pepsi001.png');changeBgcolor('#0062be')"
+                    alt="Pepsi soda"></li>
+
+            <li><img src="./assets/pepsi002.png" onclick="imgSlider('./assets/pepsi002.png');changeBgcolor('#e60c2c')"
+                    alt="Diet Pepsi Soda">
+            </li>
+
+            <li><img src="./assets/pepsi003.png" onclick="imgSlider('./assets/pepsi003.png');changeBgcolor('#1e1e1e')"
+                    alt="Zero Sugar Pepsi Soda"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="./assets/facebook.png" alt="Facebook Profile"></a></li>
+            <li><a href="#"><img src="./assets/twitter.png" alt="Twitter Profile"></a></li>
+            <li><a href="#"><img src="./assets/instagram.png" alt="Instagram Profile"></a></li>
+        </ul>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
